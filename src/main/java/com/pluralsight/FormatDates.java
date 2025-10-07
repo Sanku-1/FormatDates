@@ -1,6 +1,7 @@
 package com.pluralsight;
 
 import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class FormatDates {
@@ -8,6 +9,11 @@ public class FormatDates {
         LocalDateTime today = LocalDateTime.now();
 //        DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         System.out.println(today.getMonthValue() + "/" + today.getDayOfMonth() + "/" + today.getYear());
+        System.out.println(today.getYear() + "-" + today.getMonthValue() + "-" + today.getDayOfMonth());
+        System.out.println(today.getMonth() + " " + today.getDayOfMonth() + ", " + today.getYear());
+        System.out.println(today.getDayOfWeek() + ", " + today.getMonth() + " " + today.getDayOfMonth() + ", " + today.getYear() + "  " );
+
+
 //        System.out.println("");
 //        System.out.println("");
 //        System.out.println("");
